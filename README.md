@@ -1,6 +1,6 @@
 # Fio Bank API for Python
 
-[Česky](#česky)
+[Česky](#Česky)
 
 Python module for easy access to Fio Bank's web API. Uploading payment orders is not implemented yet and I have no plans to work on that for now. But patches are always welcome.
 
