@@ -20,7 +20,7 @@ import datetime, requests, decimal, re, time
 
 __all__ = ['FioBanka']
 
-BASEURL = 'https://www.fio.cz/ib_api/rest/'
+BASEURL = 'https://fioapi.fio.cz/v1/rest/'
 def _parsedate(value):
 	"""Regexp date parser. strptime() says that '%Y-%m-%d%z' is invalid"""
 	match = re.search('(\d+)-(\d+)-(\d+)[+-]\d+', value)
