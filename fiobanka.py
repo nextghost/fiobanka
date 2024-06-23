@@ -23,7 +23,7 @@ __all__ = ['FioBanka']
 BASEURL = 'https://fioapi.fio.cz/v1/rest/'
 def _parsedate(value):
 	"""Regexp date parser. strptime() says that '%Y-%m-%d%z' is invalid"""
-	match = re.search('(\d+)-(\d+)-(\d+)[+-]\d+', value)
+	match = re.search(r'(\d+)-(\d+)-(\d+)[+-]\d+', value)
 	if not match:
 		raise ValueError('Invalid date string')
 	return datetime.date(*[int(x) for x in match.groups()])
